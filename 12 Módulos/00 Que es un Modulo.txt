@@ -1,0 +1,4 @@
+Se Pueden considerar con un set de Instrucciones, funciones o variables que 
+vamos a poder incluir dentro de nuestros archivos que estamos programando, 
+de esta manera vamos a poder reutilizar codigo que nosotros creemos o de otro desarrollador
+vamos a poder crear modulos personalizables o descargar modulos de internet.
