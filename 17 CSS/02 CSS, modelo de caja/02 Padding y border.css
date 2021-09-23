@@ -1,0 +1,134 @@
+body{
+    background-color:rgb(176, 176, 241);
+}
+.parrafo{
+    size: 20px;
+}
+.margen{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    background-color: indigo;
+}
+.caja{
+    color: green;
+    margin: 8px;
+    background-color: black;
+}
+.solid{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: solid;
+    background-color: indigo;
+}
+.dashed{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: dashed;
+    background-color: indigo;
+}
+.dotted{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: dotted;
+    background-color: indigo;
+}
+.double{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: double;
+    background-color: indigo;
+}
+.groove{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: groove;
+    background-color: indigo;
+}
+.hidden{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: hidden;
+    background-color: indigo;
+}
+.inherit{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: inherit;
+    background-color: indigo;
+}
+.initial{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: initial;
+    background-color: indigo;
+}
+.inset{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: inset;
+    background-color: indigo;
+}
+.none{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: none;
+    background-color: indigo;
+}
+.outset{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: outset;
+    background-color: indigo;
+}
+.ridge{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: ridge;
+    background-color: indigo;
+}
+.unset{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: unset;
+    background-color: indigo;
+}
+.fusion{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-style: double dotted solid groove;
+    background-color: indigo;
+}
+.borde{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-color: black;
+    border-style: solid;
+    border-width: 6px;
+    background-color: indigo;
+}
+.lado{
+    color: khaki;
+    padding: 8px;
+    margin: 8px;
+    border-color: black;
+    border-style: solid;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: indigo;
+}
