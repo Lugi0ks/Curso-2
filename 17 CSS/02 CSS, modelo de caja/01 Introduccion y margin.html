@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion y Margin</title>
+    <link rel="stylesheet" href="01 Introduccion y margin.css" type="text/css">
+</head>
+<body >
+    <p>
+        <b> 
+            En HTML todas las etiquetas que nosotros escribimos o las que nosotros vamos a redactar aquí dentro
+            de nuestros archivos punto HTML, son considerados cajas.
+        </b>
+    </p>
+    <div>
+        Hola Mundo
+    </div>
+    <p>
+        Cuando uno aprienta el inspector de elementos y coloca el mouse sobre el div nos muestra el espacio de caja que este 
+        esta utilizando en la pagina.
+        <br>
+        Si vemos la de body nos muetra que esta toma la caja del div y hasta esta donde llega el contenido de esta etiqueta 
+        a su vez nos muestra el margen que esta etiqueta nos da de un elemento del otro.
+        <br>
+        Ahora al div le agregaremos la clase 'caja' que creamos en el archivo css e inspeccionamos como se ve por el inspector de elementos.
+    </p>
+    <div class="caja">Hola Mundo</div>
+    <p>
+        Vemos que esta le genero un espacio al lado izquierdo, si llenamos el div con muchas frases nos daremos cuenta que tambien este tiene ese espacio al lado 
+        derecho que uno no tenga el margen.
+        <br>
+        div sin la clase:
+        <div>
+            La prueba de una inteligencia de primera clase es la capacidad para retener dos ideas opuestas en la mente al mismo tiempo, y seguir conservando la 
+            capacidad de funcionar. Uno debería, por ejemplo, ser capaz de ver que las cosas son irremediables y, sin embargo, estar decidido a hacer que sean de otro modo. 
+            <b>"Crack-up"</b> (1945),<b><i> Scott Fitzgerald.</i></b> 
+        </div>
+        <br>
+        div con la clase:
+        <div class="caja">
+            La prueba de una inteligencia de primera clase es la capacidad para retener dos ideas opuestas en la mente al mismo tiempo, y seguir conservando la 
+            capacidad de funcionar. Uno debería, por ejemplo, ser capaz de ver que las cosas son irremediables y, sin embargo, estar decidido a hacer que sean de otro modo. 
+            <b>"Crack-up"</b> (1945),<b><i> Scott Fitzgerald.</i></b> 
+        </div>
+    </p>
+</body>
+</html>
