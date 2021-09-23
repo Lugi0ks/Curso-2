@@ -1,0 +1,31 @@
+body{
+    background-color: cornflowerblue;
+}
+.solid{
+    
+    padding: 8px;
+    margin: 8px;
+    border-style: solid;
+    background-color: indigo;
+    border-radius: 8px;
+}
+.alt{
+    
+    padding: 8px;
+    margin: 8px;
+    border-style: solid;
+    background-color: indigo;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+}
+.cont{
+    color: darkgreen;
+    padding: 8px;
+    margin: 8px;
+    border-style: solid;
+    background-color: black;
+    border-radius: 8px;
+    width: 100px;
+    border-color: red;
+}
