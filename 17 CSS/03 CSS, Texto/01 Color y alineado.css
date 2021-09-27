@@ -1,0 +1,11 @@
+body{
+    background-color: gainsboro;
+}
+p{
+    color: lightcoral;
+    text-align: center;
+}
+.t{
+    color: lightcoral;
+    text-align: left;
+}
