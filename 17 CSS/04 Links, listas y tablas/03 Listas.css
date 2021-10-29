@@ -1,0 +1,29 @@
+body{
+    background-color: cadetblue;
+}
+ul .l1{
+    list-style-type: circle;
+}
+ul .l2{
+    list-style-type: square;
+}
+ul .l3{
+    list-style-type: upper-roman;
+}
+ul .l4{
+    list-style-type: upper-alpha;
+}
+ul .l5{
+    list-style-type: lower-greek;
+}
+.ul1 {
+    background-color: darkcyan;
+    border: solid 1px rgb(2, 102, 102);
+    border-radius: 4px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+ul .l6{
+    border-bottom: solid 1px rgb(2, 102, 102);
+    padding: 15px;
+}

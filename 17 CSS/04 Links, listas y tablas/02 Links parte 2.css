@@ -1,0 +1,29 @@
+body{
+    background-color: eee;
+}
+a{
+    color: hotpink;
+    background-color: burlywood;
+}
+a:link{
+    color: pink;
+    text-decoration: none;
+}
+a:visited{
+    color: hotpink;
+}
+a:hover{
+    color: blue;
+    background-color: rgb(204, 77, 193);
+}
+a:active{
+    color: black;
+}
+.a{
+    color: hotpink;
+    background-color: burlywood;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    border: solid,rgb(187, 144, 87);
+}

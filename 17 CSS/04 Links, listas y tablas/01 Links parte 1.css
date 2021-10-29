@@ -1,0 +1,20 @@
+body{
+    background-color: eee;
+}
+a{
+    color: hotpink;
+}
+a:link{
+    color: pink;
+    text-decoration: none;
+}
+a:visited{
+    color: hotpink;
+}
+a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+a:active{
+    color: black;
+}
