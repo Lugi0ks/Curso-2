@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-transform: capitalize;
+}
+tr:nth-child(even){
+    background-color: lightslategray;
+}
+td{
+    border: 1px;
+    color: black;
+    padding: 8px;
+
+}
+table th{
+    background-color: mediumaquamarine;
+    color:chocolate;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
