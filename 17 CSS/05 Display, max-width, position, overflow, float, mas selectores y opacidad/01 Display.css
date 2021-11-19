@@ -1,0 +1,15 @@
+body{
+    background-color: blanchedalmond;
+}
+.a{
+    display: inline;
+}
+.b{
+    display: block;
+}
+ul li{
+    list-style-type: circle;
+}
+#in{
+    display: none;
+}

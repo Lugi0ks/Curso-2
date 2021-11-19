@@ -1,0 +1,18 @@
+body{
+    background-color: burlywood;
+}
+#ovh{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+#ovs{
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+#ova{
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+}

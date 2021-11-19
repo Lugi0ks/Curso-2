@@ -1,0 +1,10 @@
+body{
+    background-color: blanchedalmond;
+}
+p{
+    max-width: 350px;
+    margin: auto;
+    background-color: blueviolet;
+    position: relative;
+    left: 15px;
+}
