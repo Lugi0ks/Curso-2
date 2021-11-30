@@ -1,0 +1,10 @@
+body{
+    background-color: antiquewhite;
+}
+.imd {
+    float: right;
+
+}
+.imd:hover{
+    opacity: 0.5;
+}

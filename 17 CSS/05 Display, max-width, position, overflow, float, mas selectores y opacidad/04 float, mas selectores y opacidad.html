@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="04 float, mas selectores y opacidad.css" type="text/css">
+    <title>Display, max-width, opacidad</title>
+</head>
+<body>
+    <p>
+        donde vamos a indicar un texto largo mas de lo normal para que podamos ver como actua la propiedad de float
+    </p>
+    <img src="https://pbs.twimg.com/media/E1H1g_MXMAAagV_?format=jpg&name=large" width="550" height="300">
+
+    <p> ahora vamos a realizar lo mismo pero que el texto se encuente en el lado izquierdo de la imagen
+    </p>
+    <div>
+         <p>
+            donde vamos a indicar un texto largo mas de lo normal para que podamos ver como actua la propiedad de float
+        </p>
+        <img class="imd" src="https://pbs.twimg.com/media/E1H1g_MXMAAagV_?format=jpg&name=large" width="550" height="300">
+    </div>
+    <br>
+    <p>
+        Tomamos el espacio que queda dentro del bloque y lo llenamos con el texto que estemos agregando,
+        con la propiedad :hover en la etiqueta y le agregamos la opacidad este nos permitira 
+        dar opacidad cuando toquemos la imagen con el mouse de la siguiente manera <br>
+        img:hover{ (asi creariamos la etiqueta) <br>
+            opacity: 0.5; (que tan opaco quiero la imagen) <br>
+        }(finalizo la etiqueta) <br>
+    </p>
+    <p>recuerda que si queieres tomar el elemeto que esta dentro de optro elemento tienes que poner primero la etiqueta que contienen la etiqueta que quieres modificar y luego la etiqueta a modificar separadas por un espacio <br>
+        div p {(Tomaremos los parrafos que se encuentran el la etiqueta div) <br>
+            (lo que queramos hacer con ese elemento) <br>
+        }(cerramos la modificacion) <br>
+    </p>
+
+</body>
+</html>
