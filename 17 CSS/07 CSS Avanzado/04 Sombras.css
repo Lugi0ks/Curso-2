@@ -1,0 +1,6 @@
+body{
+    background-color: white;
+}
+.box{
+     box-shadow: 2px 0px 63px rgba(0, 0, 0,0.3) alpha;
+}
