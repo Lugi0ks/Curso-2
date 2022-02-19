@@ -1,0 +1,4 @@
+Construir 3 cajas en css 
+la primera caja atendrea el borde del lado izquierdo rojo ademas de esto esta tiene una sombra abaho y un background color blanco
+la segnda caja sera practicamente igual solo cambia el color de rojo a verde y que cuando se ponga arriba el mouse en vez de agrandarce tambien se agrandara la sombra
+la tercera en vez de color verde sera azul esta no cambia de dimenciones si no su fondo cambiara de color
