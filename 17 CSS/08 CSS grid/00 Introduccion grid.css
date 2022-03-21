@@ -1,0 +1,12 @@
+body{
+    background-color: #eee;
+}
+.gid{
+    display: grid;
+}
+.gidd{
+    display: inline-grid;
+}
+.element{
+    background-color: red;
+}
