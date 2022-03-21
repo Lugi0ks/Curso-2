@@ -1,0 +1,22 @@
+vamos a ver css grid (grilla) 
+
+la grilla es un sistema para que nosotros le podamos dar una distribucion 
+a los elementos que le introduscamos.
+
+Las grillas vendrían siendo un sistema de celdas como el que nosotros podíamos ver en Microsoft Excel
+o en Google.
+
+Google Spreads sits que nos permite a nosotros distribuir el contenido como si este fuese muy similar
+a una tabla.
+
+Pero no es una tabla, es más que nada como una grilla en Excel y nos permite a locar el contenido.
+
+Vamos, este mismo fuese una grilla.
+
+Ahora nosotros podemos distribuir este contenido, ya sea en columnas y en filas, al igual que en Excel.
+
+Pero nosotros también vamos a tener un par de instrucciones más que nos van a permitir a nosotros poder
+
+cambiar el alto, cambiar el ancho, también cambiar la posición de estos elementos y también asignarles.
+
+En este caso alguna altura predefinida o algún ancho predefinido y que este se vaya repitiendo.
