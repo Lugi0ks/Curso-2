@@ -1,0 +1,62 @@
+<!--
+    ahora vamos a ver como dar dimenciones de manera explicita a las  filas que crearemos y a las columnas
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="02 Tamaño minimo y maximo.css" type="text/css">
+    <title>Dimenciones de filas y columnas</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="element">AA</div>
+        <div class="element">BB</div>
+        <div class="element">CC</div>
+    </div>
+    <!-- si no le genero la altura esta la genera automaticamnente-->
+    <p>si no le genero la altura esta la genera automaticamnente como vemos en el caso de arriba</p>
+    <br>
+    <div class="gidd">
+        <div class="element">AA</div>
+        <div class="element">BB</div>
+        <div class="element">CC</div>
+        <div class="element">DD</div>
+        <div class="element">EE</div>
+        <div class="element">FF</div>
+    </div>
+    <br>
+    <div class="gridd">
+        <div class="element">AA</div>
+        <div class="element">BB</div>
+        <div class="element">CC</div>
+        <div class="element">DD</div>
+        <div class="element">EE</div>
+        <div class="element">FF</div>
+    </div>
+    <!-- ahora vemos que como en el elemento de arriba solo definimos 3 colunas esta las refleja dejando los otros elementos abajo de estas 
+    llenando las columnas que definimos con los elementos en el div -->
+    <p> ahora vemos que como en el elemento de arriba solo definimos 3 colunas esta las refleja dejando los otros elementos abajo de estas 
+        llenando las columnas que definimos con los elementos en el div.
+        <br>
+        "grid-template-columns: 90px 50px 120px;" -> elemento de arriba
+        <br>
+        "grid-template-columns: 90px 50px 120px 50px;" -> elemento de abajo
+    </p>
+    <p>
+        No solo podemos utilizar pixeles sino tambien rem, fracciones de la pantalla, %. Como veremos ahora en este orden.
+        <br>
+    </p>
+    <div class="griddd">
+        <div class="element">AA</div>
+        <div class="element">BB</div>
+        <div class="element">CC</div>
+        <div class="element">DD</div>
+        <div class="element">EE</div>
+        <div class="element">FF</div>
+    </div>
+</body>
+</html>
