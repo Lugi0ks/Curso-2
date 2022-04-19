@@ -1,0 +1,43 @@
+body{
+    background-color: antiquewhite;
+}
+.grid{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    align-items: stretch;
+}
+.header{
+    grid-column: col-inicio / col-end;
+    grid-row: row-inicio / row-fin;
+}
+.red{
+    background-color: red;
+}
+.item-1{
+    justify-self: center;
+}
+.item-2{
+    justify-self: end;
+}
+.item-3{
+    justify-self: start;
+}
+.item-4{
+    align-self: stretch;
+}
+.item-5{
+    align-self: center;
+}
+.item-6{
+    align-self: end;
+}
+.item-7{
+    align-self: start;
+}
+.item-8{
+    align-self: stretch;
+}

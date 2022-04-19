@@ -1,0 +1,81 @@
+body{
+    background-color: #eee;
+}
+.grid{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+.grid1{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    justify-items: start;
+}
+.grid2{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    justify-items: end;
+}.grid3{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+}
+.grid4{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    align-items: start;
+}
+.grid5{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    align-items: center;
+}
+.grid6{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    align-items: stretch;
+}
+.grid7{
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    align-items: end;
+}
+.header{
+    grid-column: col-inicio / col-end;
+    grid-row: row-inicio / row-fin;
+}
+.red{
+    background-color: red;
+}

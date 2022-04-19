@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="09 Grilla implicita.css" type="text/css">
+    <title>Grilla Implicita</title>
+</head>
+<body>
+    <p>
+        Una grilla explicita es una como esta:
+        <pre>
+            .grid{
+                display: grid;
+                grid-template-areas: "header herader" "content sidebar" "footer footer";
+                grid-template-rows: 150px 1fr 100px;
+                grid-template-columns: 1fr 200px;
+            }
+        </pre>
+        <div class="grid">
+            <div class="element">header</div>
+            <div class="element">header</div>
+            <div class="element">content</div>
+            <div class="element">sidebar</div>
+            <div class="element">footer</div>
+            <div class="element">footer</div>
+        </div>
+        <br>
+        La grilla implícita es todo aquel contenido que se encuentre dentro de este grid que no haya sido definido
+        dentro de nuestros grid, grid-template-rows,
+        grid-template-columns o también dentro de nuestro grid-template-areas.
+        Supongamos que tenemos solo 3 filas agregadas en el grid y agregamos mas contenido seguiran apareciendo pero no directa por asi decirlo,
+        si a la propiedad de grid en el css le agregamos el parametro grid-auto-rows este nos ayudadra a colocar 
+        de manera automatica el tamaño a todo elemento que este fuera de los parametros señalados con anterioridad de la siguiente manera:
+        <br>  
+        <pre>
+            CSS:
+            .grid{
+                display: grid;
+                grid-template-areas: "header herader" "content sidebar" "footer footer";
+                grid-template-rows: 150px 1fr 100px;
+                grid-template-columns: 1fr 200px;
+                grid-auto-rows: 140px;
+            }
+            HTML:
+            <code>
+                &lt;div class="grid"&lt;
+                &lt;div class="red"&lt;header&lt;/div&lt;
+                &lt;div class="red"&lt;header&lt;/div&lt;
+                &lt;div class="blue"&lt;
+                    &lt;div&lt;contido&lt;/div&lt;
+                    &lt;div&lt;contido&lt;/div&lt;
+                    &lt;div&lt;contido&lt;/div&lt;
+                    &lt;div&lt;contido&lt;/div&lt;
+                    &lt;div&lt;contido&lt;/div&lt;
+                &lt;/div&lt;
+                &lt;div class="blue"&lt;sidebar&lt;/div&lt;
+                &lt;div class="red"&lt;footer&lt;/div&lt;
+                &lt;div class="red"&lt;footer&lt;/div&lt;
+                &lt;div&lt;contido&lt;/div&lt;
+                &lt;div&lt;contido&lt;/div&lt;
+                &lt;div&lt;contido&lt;/div&lt;
+                &lt;div&lt;contido&lt;/div&lt;
+                &lt;div&lt;contido&lt;/div&lt;
+                &lt;/div&lt;
+            </code>
+        </pre>  
+        <div class="grid">
+            <div class="red">header</div>
+            <div class="red">header</div>
+            <div class="blue">
+                <div>contido</div>
+                <div>contido</div>
+                <div>contido</div>
+                <div>contido</div>
+                <div>contido</div>
+            </div>
+            <div class="blue">sidebar</div>
+            <div class="red">footer</div>
+            <div class="red">footer</div>
+            <div>contido</div>
+            <div>contido</div>
+            <div>contido</div>
+            <div>contido</div>
+            <div>contido</div>
+        </div>
+        <br>
+        Ahora, sin embargo, dentro de las propiedades que nosotros también podemos agregar, tenemos grid
+        auto flow, y aquí nosotros podemos tener dos propiedades, podemos tener brow o también podemos tener
+        columna.
+        Y esto es lo que va a ser el que nos va a indicar cuál va a ser el flujo en este caso de nuestras villas.
+        Como pueden ver aquí, nosotros lo cambiamos por columnas.
+        <br>
+        Con Row:
+        <br>
+        <div class="grid2">
+            <div class="element">1</div>
+            <div class="element">2</div>
+            <div class="element">3</div>
+            <div class="element">4</div>
+            <div class="element">5</div>
+            <div class="element">6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+        </div>
+        Con Column: <br>
+        <div class="grid3">
+            <div class="element">1</div>
+            <div class="element">2</div>
+            <div class="element">3</div>
+            <div class="element">4</div>
+            <div class="element">5</div>
+            <div class="element">6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+        </div>
+    </p>
+    
+</body>
+</html>
