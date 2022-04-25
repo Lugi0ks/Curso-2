@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03 Propiedades del contenedor.css" type="text/css">
+    <title>Propiedades del contenedor</title>
+</head>
+<body>
+    <p>
+        div que vamos a modificar con la variable flex
+       <pre>
+           <code>
+                &lt;div class="flex"&gt;
+                    &lt;div&gt;A&lt;/div&gt;
+                    &lt;div&gt;B&lt;/div&gt;
+                    &lt;div&gt;C&lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+       </pre>
+    </p>
+    
+    <div class="flexx">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <hr>
+    <p>Al momento de cambiar la propiedad de display a flex cambia de vertical a horizontal
+        <pre>
+            .flex{
+            display: flex;
+            flex-direction: row;
+            }
+        </pre>
+    </p>
+    
+    <div class="flex">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <hr>
+    <pre>
+        .flex{
+        display: flex;
+        flex-direction: row-reverse;
+        }
+    </pre>
+    <div class="flex1">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <hr>
+    <pre>
+        .flex{
+        display: flex;
+        flex-direction: column;
+        }
+    </pre>
+    <div class="flex2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <hr><pre>
+        .flex{
+        display: flex;
+        flex-direction: column-reverse;
+        }
+    </pre>
+    <div class="flex3">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <hr>
+    <p>
+        Si Nuestro body y html usan el 100% nos pondria   en la parte inferior la listas
+    </p>
+    <hr>
+    <p>
+        Creamos un div con un ancho de 200px
+    </p>
+    <div class="flex4 body">
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+    </div>
+
+    <p>
+        pero vemos que no lo respeta ese margen y sigue dando los datos pasando ese limite para eso usaremos la propiedad 
+        <pre>
+        .flex4{
+            display: flex;
+            flex-wrap: ;
+        }
+    </pre>
+        tomando lo que sobra y colocandolo abajo pero si te das cuenta agrupamos el contenido de 3 caracteres 
+    </p>
+    <div class="flex5 body">
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>BB</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+    </div>
+    <br>
+    <div class="flex6 body">
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>BB</div>
+        <div>Cdf</div>
+        <div>Abc</div>
+        <div>Bcd</div>
+        <div>Cdf</div>
+    </div>
+</body>
+</html>
