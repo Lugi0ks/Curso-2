@@ -1,0 +1,12 @@
+En la pestaña de esquemas podemos ver las bases de datos que estas puede contener 
+creacion listado etc.
+
+y ponemos:
+create database prueba; (ctrl+intro para ejecutar)
+
+ya creada la base de datos y vemos que nos aparece al costado mostrandonos las tablas, vistas, procedimientos, y funciones.
+
+ahora ponemos:
+drop database prueba;
+
+y eliminamos la base de datos
