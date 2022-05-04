@@ -1,0 +1,73 @@
+Las relaciones uno a uno no son demasiado frecuentes pero existen así que debemos conocerlas. Buscando alguna coincidencia en nuestro entorno que nos pueda servir como ejemplo encontramos el vínculo entre un tutor y 
+su grupo. Como sabemos, un profesor puede ser tutor de un sólo grupo (UNO) y del mismo modo, cada grupo sólo puede tener un tutor. Esta sería una relación UNO a UNO.
+
+
+Este tipo de relación yo en lo personal no la he visto mucho, pero ustedes se podrían llegar a topar
+
+con ésta y es cuando tengo un registro y lo quiero relacionar solamente con uno y no quiero que uno
+
+de estos dos registros tenga más registros asociados al anterior para hacer eso.
+
+Vamos a crear nosotros una tabla que se va a llamar usuario.
+
+En la cual nosotros podemos guardar, por supuesto, su aydin.
+
+También vamos a abordar el nombre.
+
+Eso me quedó Orpheo.
+
+En nombre también su correo.
+
+Entre otros datos, por lo general, cuando nosotros vayamos a buscar al usuario, siempre vamos a necesitar
+
+el nombre del correo.
+
+Pero qué es lo que pasaría si también nosotros necesitáramos guardar los datos de contacto del usuario,
+
+como por ejemplo su teléfono y la ciudad en la que vive?
+
+Nosotros podríamos guardar esos mismos datos dentro de la tabla de usuarios, pero eso es lo que hará.
+
+Será que cada vez que nosotros vayamos a consultar por el usuario, nosotros tengamos que manipular
+
+más datos de los necesarios.
+
+En ese caso es mejor que si nosotros vamos a manipular los datos de contacto del usuario en pocas partes
+
+de nuestra aplicación.
+
+Es mejor ir a buscarlos de una manera independiente en otra tabla.
+
+Para hacer eso, nosotros podemos crear una tabla de contacto.
+
+En donde nosotros guardaremos todos los datos asociados al contacto del usuario, como su número de
+
+teléfono y también su ciudad o país y país.
+
+En ese caso, nosotros vamos a necesitar un Heidy.
+
+Vamos a necesitar también el usuario Aydin.
+
+Y también vamos a necesitar su teléfono.
+
+Ciudad voy a llegar hasta uno más porque no me alcanza más espacio en el tablet, pero con esto creo
+
+que ya se entiende el punto.
+
+Lo importante de esto es que la relación como nosotros la vamos a forjar, va a ser igual a la relación
+
+de uno a muchos.
+
+Pero nosotros vamos a verificar siempre en nuestro código, no en nuestra base de datos, que siempre
+
+exista solamente un registro y cuando nosotros queramos ir a actualizar nuestro registro, siempre vamos
+
+a estar manipulando el mismo.
+
+En este caso es el de contacto y si es que queremos agregar un nuevo registro, primero tenemos que
+
+validar si es que ya existe uno.
+
+Toda esa validación se va a realizar desde el lenguaje de programación y esto se conoce con una relación
+
+de uno a uno.

@@ -1,0 +1,5 @@
+Veamos el primer modelo de relación tomando como referencia las tablas Alumnos y Grupos. Cualquier alumno (MUCHOS) pertenece sólo a un grupo (UNO), un alumno no puede estar en más de una clase.
+Pues bien, ni más ni menos que este sería el argumento de una relación MUCHOS A UNO.
+
+Otro ejemplo, sabemos que cada profesor pertenece únicamente a un departamento, pero en cada departamento existe más de un profesor. De aquí podemos extraer una relación UNO a MUCHOS
+ entre las tablas Departamentos y Profesores.

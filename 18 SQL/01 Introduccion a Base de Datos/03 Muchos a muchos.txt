@@ -1,0 +1,83 @@
+Resumiendo lo visto hasta ahora podemos decir que el tipo de relación ideal es uno a muchos o muchos a uno. Las relaciones uno a uno no aportan demasiado a la base de datos,
+simplemente nos ayudan a tener mejor organizada la información pero poco más. Veamos qué ocurre con las relaciones muchos a muchos.
+Por ejemplo, si queremos conocer los profesores que dan clase a un grupo o los grupos a los que da clase un profesor determinado, necesitamos en principio dos tablas: 
+    Profesores y Grupos. ¿Y cuál sería la relación entre estas dos tablas? Pues bien, para establecerla podríamos leer que un profesor da clases a varios grupos (1A, 1B, 2C, etcétera)
+    y un grupo recibe clases de varios profesores (Carlos Pérez, Antonio García, etcétera). Por lo tanto, nos encontramos entre una relación MUCHOS A MUCHOS.
+
+
+    ejemplo un rapido 
+
+    un profresor tiene muchos alumnos y los alumnos tiene muchos profesores
+
+
+Vamos a comenzar definiendo primero dos tablas.
+
+Vamos a definir acá una de libros.
+
+Y vamos a definir luego otra de autores.
+
+Los libros pueden ser escritos por muchos autores.
+
+Sé que tú tienes algún libro en tu casa.
+
+Puede ser que tenga más de un solo autor y un autor también puede escribir muchos libros.
+
+No es necesario que él escriba solamente uno, por lo que si nosotros utilizamos.
+
+El modelo anterior que nosotros vimos, los autores solamente podrían tener un libro y un libro muchos
+
+autores, o hacerlo al revés que un libro, que un autor tenga muchos libros, pero solamente podría
+
+tener un autor.
+
+En este caso, nosotros podemos optar por una relación de muchos a muchos.
+
+Para nosotros utilizar una relación de muchos es a muchos.
+
+Vamos a necesitar utilizar una tabla intermedia.
+
+La cual no solo le vamos a llamar.
+
+Livros.
+
+Autores, aunque ésta también se podría llamar autores, libros o libro, autor o autor libro, eso
+
+no es lo importante, lo importante es lo que contiene esta tabla intermedia.
+
+Nosotros, los autores, tenemos que guardar los Eilis de cada uno de estos autores.
+
+Vamos a tener el uno, dos, tres y así sucesivamente.
+
+Lo mismo con los libros.
+
+Y en la tabla de libros autores nosoros, por supuesto, también debemos guardar un Heidy único.
+
+Que también va a ser incremental.
+
+Uno, dos, tres y así sucesivamente.
+
+Pero también tenemos que guardar.
+
+Libro.
+
+Hoy vi también.
+
+Ator.
+
+Hoy vi de esta manera, si es que nosotros tenemos que el autor, uno ha creado más de un libro.
+
+Nosotros podemos decir que el autor uno creó el libro número uno.
+
+También podemos decir que el autor uno creó el libro número dos.
+
+Esto permite que un autor tenga múltiples libros.
+
+Pero si además quiero que el autor dos haya participado en el libro número uno, también lo podemos
+
+hacer.
+
+Y también el autor 2 perfectamente pudo haber creado el libro número 3 de esta manera nosotros podemos
+
+relacionar dos tablas, pero con una relación de muchos a muchos.
+
+Un libro puede tener muchos autores y un autor puede también tener muchos libros.

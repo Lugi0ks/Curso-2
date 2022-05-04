@@ -1,0 +1,183 @@
+Vamos a ver ahora con un pequeño diagrama cómo nosotros vamos a interactuar con nuestra base de datos.
+
+Cuando nosotros construimos aplicaciones, vamos a tener por lo general nuestro explorador web, aunque
+
+nosotros también podríamos tener en este caso.
+
+Podríamos tener algún algún dispositivo móvil, como algún teléfono, o podríamos tener otra cosa con
+
+la cual nosotros vamos a interactuar con nuestra aplicación web.
+
+Al nosotros estar conectándonos a nuestro servidor utilizando este cliente, puede ser, como les comentaba
+
+el explorador web o.
+
+Un teléfono.
+
+Éste se va a conectar directamente contra un servidor.
+
+El servidor, en este caso va a contener el lenguaje de programación.
+
+El lenguaje de programación puede ser nouvelles, puede ser Python, puede ser Ruby, puede ser cualquiera.
+
+No es necesario que sea solamente uno.
+
+Y este servidor contendrá toda la lógica de nuestra aplicación.
+
+Una vez que nosotros ya nos hemos conectado con nuestro servidor de aplicaciones, nosotros vamos a
+
+tener que necesariamente obtener data de manera dinámica, como por ejemplo cuando nosotros ingresamos
+
+a algún blog, a alguna página web o incluso a alguna red social.
+
+Nosotros vamos a ir viendo contenido que este va a ir cambiando dependiendo de que esté iniciando sesión
+
+o quién se encuentre navegando en esta aplicación.
+
+Todos estos datos se sacan por supuesto de algún lado y en este caso lo estamos sacando de un servidor
+
+de base de datos, el cual va a guardar los registros no solamente del usuario, sino también todos
+
+los registros que éste pueda almacenar.
+
+En este caso, supongamos que yo voy a tener aquí mi usuario que está iniciando sesión y el llego y
+
+realizó una petición a nuestro servidor, a nuestro servidor de aplicación.
+
+Y esta petición que le hizo fue la de iniciar sesión.
+
+El servidor de nuestra obligaciones, en este caso, va a tomar esta petición y va a ver qué es lo que
+
+tiene que hacer con ésta.
+
+Por lo general nosotros vamos a iniciar sesión ingresando un usuario.
+
+Y contraseña.
+
+Nuestro servidor de aplicaciones va a ir a buscar a nuestra base de datos.
+
+Este usuario.
+
+Y también va a traer la contraseña.
+
+En esta misma petición.
+
+De esta manera, nuestro servidor de aplicaciones podrá verificar que el usuario que inició sesión ingresó
+
+su contraseña de manera correcta y en el caso de que así haya sido nuestro servidor de aplicaciones
+
+le va a devolver datos, en este caso al cliente, que puede ser la aplicación móvil o también puede
+
+ser el explorador web.
+
+Si es que tuvo éxito, le va a decir OK.
+
+Inicia sesión con éxito y en el caso de que no haya iniciado sesión con éxito, le va a indicar que
+
+el usuario o la contraseña fueron invalidos.
+
+En este caso, esta sección donde nosotros estamos accediendo a los datos es nuestro servidor de base
+
+de datos.
+
+Estas bases de datos van a almacenar toda la información que hace referencia a los usuarios o a lo que
+
+sea en verdad.
+
+Porque tú puedes almacenar todo lo que tu quieras en una base de datos, pero también teléfonos celulares
+
+como este que nosotros dibujamos acá o incluso exploradores web.
+
+Ellos también tienen incluidas bases de datos que nosotros vamos a ver más adelante, por lo que no
+
+es necesario tener un servidor de bases de datos específicamente en un servidor aparte.
+
+Incluso también lo que nosotros podríamos tener es que en un gran servidor nosotros tengamos nuestro
+
+servidor de aplicaciones.
+
+Como habíamos dicho, el que está escrito en Python no es rubio PHP y además en esta misma máquina física.
+
+Nosotros también podemos tener nuestro servidor de base de datos.
+
+Lo importante mencionar acá es que la base de datos se va a encargar de almacenar toda la información
+
+de nuestra aplicación y ésta puede estar en un servidor en la nube, o también puede encontrarse dentro
+
+de un dispositivo móvil o también en un explorador web, ya que hemos visto la participación que tiene
+
+una base de datos dentro de una aplicación.
+
+Ahora vamos a ver cómo ésta almacena la información que después nosotros vemos.
+
+Para eso vamos a eliminar todo esto.
+
+Y luego de haber eliminado, ahora podemos visualizar cómo nuestra información va a ser guardada dentro
+
+de las bases de datos.
+
+Nosotros vamos a ver las relacionales, las bases de datos relacionales almacenan la información como
+
+si éstas fueran hojas de cálculo o planillas de hojas de cálculo, por lo que nosotros vamos a ver registros.
+
+En tablas y estas tablas van a tener una cabecera.
+
+Todas estas tablas tienen que tener por convención.
+
+No es necesario, pero sí es muy importante que lo tengan.
+
+Un atributo que se va a llamar Heidy, que es el identificador del registro con el cual nosotros estamos
+
+trabajando.
+
+Además de eso, nosotros podemos agregar todos los registros que nosotros queramos.
+
+En este caso vamos a hacer el ejemplo que estamos trabajando con una tabla de usuario.
+
+Un usuario, por supuesto, también tiene un nombre.
+
+Y también tiene un correo.
+
+En nuestra aplicación también puede tener más datos, pero los vamos a dejar solamente aquí con nombre
+
+y correo y ésta va a ser una tabla de usuario dentro de esta tabla.
+
+Nosotros vamos a poder guardar todos los registros que nosotros queramos o los que aguante el disco
+
+duro, la capacidad de nuestro disco duro, los Eilis, por lo general estos se van creando de manera
+
+incremental.
+
+Por lo que nuestro primer registro va a ser uno.
+
+El segundo registro va a ser 2 3 0 3 4 4 5 5 y así sucesivamente, hasta llegar al último registro que
+
+nosotros hayamos generado dentro de nuestra base de datos.
+
+Seguido de esto, por supuesto, también vamos a tener los nombres de los usuarios.
+
+Aquí vamos a colocar Nicko.
+
+Chanchito.
+
+Felipe.
+
+Etcétera, etcétera.
+
+Lo mismo también con los correos.
+
+Aquí voy a tener un correo de Nico.
+
+Arroga las puntocom puntocom chanchitos va a tener.
+
+Chanchito roba algo más.
+
+Y Felipe va a tener F 1966 5, arruga algo más los registros cuando nosotros los guardamos dentro de
+
+nuestras tablas, se van a ver más o menos así.
+
+Después, cuando nosotros ingresemos a ver los registros que se encuentran, nos vamos a dar cuenta
+
+de que todos van a cumplir con esta misma estructura, que es muy similar a una planilla de hoja de
+
+cálculo o en este caso algo, algún Excel
