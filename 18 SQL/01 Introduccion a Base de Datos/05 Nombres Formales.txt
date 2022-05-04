@@ -1,0 +1,8 @@
+Nosotros vamos a crear tablas las cuales hagan referencia de lo que estas contengan y en forma singular ejemplo cliente, pais, idioma, etc
+
+cada tabla va a tener x cantidad de campos segun se requiera ejemplo en cliente puede tener id, nombre, apellido, correo, etc.
+cada elemto que llenemos por cliente se llama dato.
+
+
+estos datos pueden ser null menos uno en este caso el id y a este se le llama primarykey 
+existe la llave foranea la cual es para referir otro registro de otra tabla.
