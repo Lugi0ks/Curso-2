@@ -1,0 +1,22 @@
+1.- Abrimmos nuestro explorador habitual y buscamos MySQL.
+2.- Nos vamos a Dowloads y buscamos la MySQL Community y la clickeamos.
+3.- Ya adentro de esta opcion buscamos MySQL Community Serve.
+4.- Y ejecutamos el instalador de Windows e instalamos el completo.
+5.- Nos saldra iniciar sesion, crear una cuenta o no gracias y solo descargar (ahi ve tu).
+6.- Extraemos y le damos a Instalar.
+7.- Se nos abre una ventana donde le damos a Custom (en este caso).
+8.- Seleccionamos el + en MySQL Servers una vez mas y movemos MySQL Server 8.0 al otro lado dandole a la flecha verde.
+9.- En aplicaciones vamos a poner Workbench.
+10.-Le damos a next y clicamos el primer elemento listado (le damos a execute y este instala lo que ese elemento requiere).
+11.-Y nos muestra que ya esta listo para configurar
+12.-Le damos a la primera opcion y next.
+13.-Dejamos todo por defecto y le damos a next.
+14.-Dejamos la primera opcion y next.
+15.-Ahora nos pide una contraseña para root y la colocamos, aqui tambien puedes crear un usuario para que tenga poderes dentro de la bd.
+16.-Creamos un usuario para no usar el root le ponemos un nombre, en host dejamos el por defecto, en role ponemos DB Manager y le agregamos una pass y next.
+17.-Aca dejamos clickeada la primera opcion y si quieres dejas lo de iniciar MySQL al inicial el pc, dejamos en standar system account y next.
+18.-Nos muestra los pasos que realizara y le damos a execute.
+19.-Y finish y next.
+20.-Finish.
+21.-Se nos abre y podemos ver opciones y la instacia que vamos a utilizar.
+22.-Ingresamos como root y le damos a ok y ya esta instalada la base de datos.
