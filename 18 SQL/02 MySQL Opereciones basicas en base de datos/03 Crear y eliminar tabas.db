@@ -1,0 +1,16 @@
+-- le damos a 
+use prueba;
+
+-- asi ve que estamos utilizando esa bd.
+
+-- creamos la taba 
+
+create table Usuario(
+    id int,
+    userName varchar(50)
+    email varchar(255),
+);
+
+-- Si queremos eliminar la tabla colocaremos drop table de la siguiente manera
+
+drop table Usuario;
