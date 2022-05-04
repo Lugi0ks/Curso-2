@@ -1,0 +1,14 @@
+-- para alterar usaremos la sentencia alter table ... de la siguetemanera
+
+alter table prueba add edad int;
+
+-- aqui agregamos una nueva columna a la tabla prueba.
+
+-- en el caso de querer eliminar usamos el drop column en el alter
+
+alter table cliente drop column edad;
+
+
+-- ahora para modificar una columna usamos modify column
+
+alter table cliente modify column email varchar(50);
