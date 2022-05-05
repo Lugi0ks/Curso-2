@@ -1,0 +1,6 @@
+-- para eliminar registros usaremos delete
+
+delete from Clientes where id=3;
+
+-- aqui eliminamos el usuario con el id N 3 si no colocamos el where podriamos eliminar todos los datos.
+

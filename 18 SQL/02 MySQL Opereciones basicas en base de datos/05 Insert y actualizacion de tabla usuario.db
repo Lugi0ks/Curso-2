@@ -1,0 +1,22 @@
+-- para insertar datos usaremos insert into (tabla)
+
+insert into cliente(
+    email, username
+)values(
+    'prueba.mail@mail.com','rat'
+);
+
+-- para actualizar la tabla que vamos a hacer primero eliminaremos la tabla y alterar esta
+ 
+ delete from cliente where email='prueba.mail@mail.com' limit: 1;
+
+-- ahora modificamos la tabla u agregamos la pk
+
+alter table cliente add primary key (id);
+
+-- ahora vemos que sale como llave primaria id pero no podemos agregar el usuario para esto la modificaremos
+
+alter table cliente modify column id int AUTO_INCREMENT;
+
+-- ahora vemos que si se pudo agregar el usuario de manera exitosa si le hacemos un select * 
+-- veneremos que en id nos da un valor numerico el cual es 1

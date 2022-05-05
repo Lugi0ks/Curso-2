@@ -1,0 +1,6 @@
+-- para actualizar datos usaremos update de la siguiente manera
+
+UPDATE `prueba`.`cliente` SET `edad` = '26' WHERE (`id` = '4');
+
+-- aqui actualizamos la edad del cliente con el cuarto id (para no liarla usa where).
+-- de esta manera podemos actualizar todos los campos menos el id

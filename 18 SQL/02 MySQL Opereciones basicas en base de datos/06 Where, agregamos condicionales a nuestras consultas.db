@@ -1,0 +1,5 @@
+-- cuando queramos ver o filtar por algun elemento usaremos ''where'' para mostar esos datos
+-- agregamos y buscamos solo al nuevo ingresado
+
+select * from cliente where edad =25;
+
