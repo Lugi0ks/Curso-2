@@ -1,0 +1,25 @@
+En esta sección veremos el micro framework de Flask Flask tiene algunas funcionalidades que nos permitirán
+
+a nosotros construir aplicaciones web.
+
+Pero cuando dice que es micro se refiere a que no tiene todas las funcionalidades que puede tener un
+
+framework completo, sino que solamente nos entregará un par de herramientas para que nosotros podamos
+
+hacer una aplicación web funcional.
+
+Esto no quiere decir que Flash sea una herramienta de juguete.
+
+Flash es un framework sumamente poderoso con el cual nosotros podremos trabajar y también lanzar aplicaciones
+
+ambientes de producción.
+
+Flash no te dice qué base de datos tienes que utilizar, por lo cual nosotros podremos configurar nuestra
+
+propia base de datos con flash.
+
+Y lo mejor de todo es que Flash no dejará la libertad para que nosotros podamos elegir otras herramientas
+
+que queramos utilizar con él.
+
+Vamos a ver cómo se utiliza este framework.

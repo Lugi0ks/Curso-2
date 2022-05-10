@@ -1,0 +1,52 @@
+Antes de siquiera empezar a trabajar en un proyecto con el framework de Flask, debemos entender primero
+que es un ambiente virtual
+Un ambiente virtual soluciona el problema cuando tenemos que trabajar con múltiples dependencias.
+Hasta el momento cuando nosotros hemos estado instalando nuestras dependencias o también nuestros módulos,
+los hemos instalado en el entorno global, por lo que cada proyecto que nosotros creemos este tendrá
+acceso a todos esos módulos.
+El problema vendría siendo cuando nosotros tenemos que trabajar con distintas versiones de estos módulos
+ya sea en producción o en desarrollo, o incluso también con distintas versiones de Python.
+Para eso nosotros debemos utilizar ambientes virtuales, los cuales nos permitirán a nosotros tener
+distintas versiones de los módulos que nosotros estaremos instalando.
+Lo primero que nosotros debemos hacer, por supuesto, es crear una carpeta donde almacenamos nuestro
+
+
+proyecto y en este caso vamos a crear una carpeta que se va a llamar Intro Flask y nosotros ingresaremos.
+
+A esta carpeta, dentro de esta carpeta, nosotros debemos ejecutar lo siguiente 3 menos m b e n b espacio
+
+b e n b.
+
+Si tú te encuentras dentro del sistema operativo Windows, debes escribir p i griega menos 3 espacio
+
+menos m, espacio b, e n b espacio b e nva y eso ejecutará prácticamente lo mismo.
+
+Este comando lo que hará será crear una carpeta dentro de nuestro proyecto que se llama benef.
+
+Y luego de haber creado lo que nosotros debemos hacer es activar los ambientes virtuales.
+
+Para eso nosotros escribimos.
+
+Punto.
+
+Espacio Vended Fleisch Vim y dentro de Binh nosotros vamos a ejecutar el comando de Actívate y eso es
+
+lo que hará.
+
+Será agregar este pequeño texto que se encuentra justamente acá a la izquierda de mi línea de comandos.
+
+Eso me indicará que ya tengo habilitado los ambientes virtuales dentro de mi terminal.
+
+Una vez que ya hemos hecho eso, ahora podemos instalar Flask para eso en Windows SPIP en los que estamos
+
+en Mac o en Linux es pyp 3, pyp 3 seguido de instal espacio Flass.
+
+Y fíjense que es con la F en mayúscula.
+
+Ya se ha instalado, finalmente, lo que haré será ingresar también dentro de esta terminal.
+
+A ese espacio de trabajo de intro flash y también activaré el entorno virtual, ya que estaré utilizando
+
+la terminal de la izquierda para editar el código y la terminal de la derecha para dejar activo nuestro
+
+servidor.
