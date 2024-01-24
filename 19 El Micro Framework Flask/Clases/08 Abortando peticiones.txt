@@ -1,0 +1,13 @@
+En algun momento nosotros vamos a querer abortar la ejecucion de nuestro codigo ya sea porque el usuario no tiene permisos o solo
+queremos retornar un error y devolver un 403 para indicar que no tiene permisos  o 401 en realidad le podemos enviar todos los codigos
+de http incluso los de javascrip para saber que sucedio en el servidor para  esto vamos a utilizar la libreria de "abort" y le adjuntamos 
+el codigo de error que sea pertinente quedando de la siguiente manera:
+
+@app.route('/lele', methods=['POST','GET'])
+def lele():
+    abort(401)
+    return redirect(url_for('pues', post_id=2))
+    # print(request.form)
+    # print(request.form['llave1'])
+    # print(request.form['llave2'])
+    return 'lele'
