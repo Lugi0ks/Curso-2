@@ -1,0 +1,13 @@
+Ya vimos como interceptar las peticiones de los usuarios, como separar todo para que vaya quedando ordenado, pero nos falta
+que es lo que le vamos a devolver por pantalla ya sean en algun formato JSON o pagina HTML 
+Ahora veremos como hacer eso:
+Tomaremos la ruta de lele y en el return vamos a colocar "render_template('lele.html')"
+donde lele.html sera nuestra plantilla a randomizar quedando asi:
+
+@app.route('/lele', methods=['POST','GET'])
+def lele():
+
+    return render_template('lele.html')
+
+Ahora cuando nosotros tratemos de llamar a esta ruta Flask intentara acceder a una carpeta llamada "Templates" y dentro de ella entrara a 
+"lele.html" en donde estara el codigo
