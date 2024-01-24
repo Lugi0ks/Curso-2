@@ -1,0 +1,9 @@
+Nosotros tambien vamos a poder devolver objetos de tipo JSON, para esto solo neceditaremos colocar un diccionario e indicarle que propiedades 
+que querramos devolver en el return quedando de la siguiente manera:
+
+@app.route('/lele', methods=['POST','GET'])
+def lele():
+    return {
+        "username":'chanquito feliz',
+        "Email":'chanchito@feliz.com'
+    }
