@@ -1,0 +1,39 @@
+Cuando nosotros estemos construyendo aplicaciones, lo más probable es que nosotros vamos a enviar datos
+de formulario desde un cliente web, una página HTML, CSS a nuestro servidor construido en Flask y
+nosotros desde Flash vamos a poder tomar esos datos.
+Y por supuesto, dependiendo de los datos que nos envian ejecutar ciertas acciones, para eso nosotros
+vamos a tener que construir un formulario completo para poder probar esta funcionalidad.
+O podemos utilizar la herramienta de Kurt.
+Vamos a utilizar esa, ya que es bastante fácil de utilizar y nos servirá para poder mostrar los ejemplos
+
+Para ver los datos que se nos estan enviando atraves de un formulario lo vamos a ver mediante el metodo request
+dentro del metodo vamos a imprimir el metodo request quedando de la siguiente forma:
+
+@app.route('/lele')
+def lele():
+    print(request.form)
+    return 'lele'
+
+y en la consola donde consultamos los metodos colocaremos (obiamente con el servidor arriba)
+curl -d "llave1=dato&llave2=dato2" -X POST http://localhost:5000
+
+con CURL es la  herramienta que usaremos para hacer llamados a los servicios o para una api
+con "-d" nos dice la datra que nosotreos queremos enviar y seguido la data
+luego colocaremos el tipo de metodo que nosotros vamos a utilizar cuando estemos utilizando el verbo
+
+con esta linea no nos mostraria nada ya que todos los metodos pasan por GET para ello tenemos que hacer que este sea un POST quedando 
+de la siguente forma
+
+@app.route('/lele', methods=["POST"])
+def lele():
+    print(request.form)
+    return 'lele'
+
+De esta manera vamos a obtener todos los datos del formulario pero si queremos obtener un dato del formulario vamos a utilizar la sintaxis
+print(request.form['llave1'])
+quedando de la siguiente forma
+@app.route('/lele', methods=["POST"])
+def lele():
+    print(request.form)
+    print(request.form['llave1'])
+    return 'lele'

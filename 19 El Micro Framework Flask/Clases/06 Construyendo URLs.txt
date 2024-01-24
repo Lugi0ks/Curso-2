@@ -1,0 +1,53 @@
+Nosotros además, podemos construir u rl, las cuales nosotros después las vamos a poder utilizar en
+nuestras plantillas o también las vamos a poder utilizar para poder redireccionar al usuario hacia otra
+ruta que nosotros tengamos definida.
+Por ejemplo, si es que el usuario logra iniciar sesión con éxito, nosotros podemos redirigir al usuario
+a una pantalla de inicio.
+Pero si es que el usuario tiene algún error, nosotros solo podríamos redireccionar a otra pantalla
+donde le mostramos una pantalla de error, donde le vamos a decir tu usuario y o contraseñas no son
+
+correctas para este tipo de cosas, Nosotros tenemos que crear una web RL a la cual vamos a reenviar a este usuario y para eso nosotros
+vamos a utilizar una función en Flask que se llama U rl guión bajo for.
+
+
+una vez importada la funcion agregaremos un "print" en lele el cual tendrea esta funcion quedando asi:
+@app.route('/lele', methods=["POST"])
+def lele():
+    print(url_for('index')
+    print(request.form)
+    print(request.form['llave1'])
+    print(request.form['llave2'])
+    return 'lele'
+
+dandonos como resultado al momento de hacer el comando "curl -d "llave1=dato1&&llave2=dato2" -X POST localhost:5000/lele"
+ /
+ImmutableMultiDict([('llave1', 'dato1'), ('llave2', 'dato2')])
+dato1
+dato2
+
+Como vemos este nos muestra la raiz de la url ahora que pasa si envez de imprimir el index imprimimos la funcion de "pues"
+@app.route('/lele', methods=["POST"])
+def lele():
+    print(url_for('pues')
+    print(request.form)
+    print(request.form['llave1'])
+    print(request.form['llave2'])
+    return 'lele'
+
+Esto nos da un error ya que pues tiene un post_id que le estamos pasando como valor sin este nos da un errror ya que este no lo encuentra
+para solucionar esto tenemos que dejarlo de la siguiente manera:
+@app.route('/lele', methods=["POST"])
+def lele():
+    print(url_for('pues', post_id=2)
+    print(request.form)
+    print(request.form['llave1'])
+    print(request.form['llave2'])
+    return 'lele'
+
+y al dar el comando curl nos deja el siguiente resultado:
+/pues/2
+ImmutableMultiDict([('llave1', 'dato1'), ('llave2', 'dato2')])
+dato1
+dato2
+
+y asi de esta manera vamos creando las urls

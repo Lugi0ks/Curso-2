@@ -1,0 +1,24 @@
+Ya tenemos como construir URLs ahora nos falta saber como redireccionar al usuario cuando sea necesario para esto vamos a usar 
+la misma  funcion de lele e importar la funcion de  "redirect" para ver como funciona el tema de redirect lo veremos por consola y por 
+web
+primero en el metodo vamos a agregar el "GET" y asi podremos empezar a utilizar el redirect
+cambiaremos el print de la url por redirect quedando asi:
+@app.route('/lele', methods=['POST','GET'])
+def lele():
+    redirect(url_for('pues', post_id=2))
+    return 'lele'
+
+si no le coloco el return al redirect este nos generara el contenido pero no lo mostrara al usuario
+pero como queremos verlo le antepondremos siempre el return
+@app.route('/lele', methods=['POST','GET'])
+def lele():
+    return print(url_for('pues', post_id=2))
+    return 'lele'
+este nos mostrara tanto en la url como en el contenido que tiene la funcion llamada
+
+al momento de realizar un curl con "POST" o "GET" nos muestra un archivo html el cual es este:
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/pues/2">/pues/2</a>. If not, click the link.

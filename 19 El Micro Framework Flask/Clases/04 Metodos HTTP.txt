@@ -1,0 +1,32 @@
+Para esto necesitaremos de 2 consolas de flask (recuerda que para activar flask tienes que entar a la carpeta donde lo instalaste y colocar:
+'. venv/Scrips/activate', luego de eso activaremos el servidor en una de las pestañas con el codigo:
+'flask --app ¨nombre de la aplicacion¨ --debug run', y con la otra podremos ir consultando los metodos ya sean ¨GET, POST, PUT, PATCH, DELETE¨ mediante
+el codigo: curl -X ¨metodo a consultar¨ http:localhost/5000/¨ruta variable¨)
+
+para la ruta de la variable vamos a agregar una coma y vamos a agreagar los metodos que querramos de la siguente forma:
+
+@app.route('/post/<post_id>' , methods=['GET','POST'])
+def lala(post_id):
+    return 'el id del post es: ' + post_id
+
+como vemos despues de crear las rutas agregamos los metodos que queramos ver, ademas esta funcion la podemos hacer una segunda vez pero 
+con la diferencia que en una la dejaremos con el ´POST´ y la otra con el ´GET´ en vez de tener una funcion con los 2 metodos pero cambiando
+el nombre del def
+
+@app.route('/post/<post_id>' , methods=['GET'])
+def lala(post_id):
+    return 'el id del post es: ' + post_id
+
+@app.route('/post/<post_id>' , methods=['POST'])
+def lili(post_id):
+    return 'el id del post es: ' + post_id
+
+con esto podremos separar la logica de estas funciones por metodos ahora como uno prefiera, pero si usas una sola funcion se recomienda
+usar el objeto de request la cual tendremos que importar quedando de la siguiente forma
+
+@app.route('/post/<post_id>' , methods=['GET','POST'])
+def lala(post_id):
+    if request.methods == 'GET'
+        return 'el id del post con el metodo get: ' + post_id
+    else:
+        return 'Este es otro metodo que no es el GET'
