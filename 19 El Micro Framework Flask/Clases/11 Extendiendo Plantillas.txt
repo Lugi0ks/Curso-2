@@ -1,0 +1,31 @@
+Vamos a crear una nueva ruta llamada "Home" con el metodo "GET" y retornaremos una nueva plantilla llamada "home.html" (la cual se crea en 
+la carpeta "templates"), ademas nosotros le vamos a agregar una variable para poder mostrar como nosotros premos renderizar variables 
+que nosotros pasamos por estas funciones hacia nuestra plantilla y esta la llamaremos "mensaje" que contendra "Hola Mundo" quedandonos 
+de la siguiente manera:
+
+@app.route ('/home', methods=['GET'])
+def home():
+    return render_template('home.html', mensaje:"Hola Mundo")
+
+en el "H1" de la plantilla "Home" vamos a incluir este mensaje de la siguiente manera:
+<h1>{{mensaje}}</h1>
+usamos el doble parentecis de llave para poder imprimir lo que contiene esta variable 
+
+
+En Nuestra carpeta "templates" vamos a crear un nuevo archivo llamado "Base.html" y en esta introduciremos:
+
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+    <h1>Titulo</h1>
+    <section class="content">
+        {% content block%}{% endblock %}
+    </section>
+</nav>
+
+
+Con esto nosotros podemos extender las plantillas que nosotros creamos, pero que nosotros tambien podemos enviarle mensajes a esta plantilla
+base dentro de la segunda linea creamos una etiqueta bloque llamada "title" ( <title>{% block title %}{% endblock %}</title> ) 
+de esta manera cuando nosotros queramos cambiar el nombre de la pagina nosotros le enviaremos un mensaje a esta etiqueta que contendra
+el nombre que nosotros queramos para cada objeto y asi sucesivamente con lo demas
